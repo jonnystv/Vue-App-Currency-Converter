@@ -1,0 +1,20 @@
+{
+  "name": "Week_07_Day_2_Homework_Currency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.12",
+    "webpack": "^5.13.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.3.1"
+  }
+}
