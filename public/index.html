@@ -13,6 +13,10 @@
 
     <div id="app">
 
+        <ul>
+            <li v-for="(value, name) in currencies.rates">{{ name }} : {{ value }}</li>
+        </ul>
+
         <label for="convert-select">Select an Exchange Method</label>
         <select id="convert-select">
             <option disabled value="Exchange Method">Exchange Method</option>
@@ -29,7 +33,7 @@
         <label for="currency-select">Select a Currency</label>
         <select id="currency-select">
             <option disabled value="Select Currency">Select Currency</option>
-            <option v-for="currency in currencies.rates" :value="currency">{{ currency }}</option>
+            <option v-for="currency in currencies" >{{ currency }}</option>
         </select>
 
 

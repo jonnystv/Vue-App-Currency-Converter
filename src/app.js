@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             getCurrencies: function() {
                 fetch("https://api.exchangeratesapi.io/latest") 
                 .then(res => res.json()) 
-                .then(this.currencies => this.currencies = currencies)
+                .then(currencies => this.currencies = currencies)
             },
         },
     });
