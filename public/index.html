@@ -13,6 +13,27 @@
 
     <div id="app">
 
+        <label for="convert-select">Select an Exchange Method</label>
+        <select id="convert-select">
+            <option disabled value="Exchange Method">Exchange Method</option>
+            <option>Convert from Euros</option>
+            <option>Convert to Euros</option>
+        </select>
+
+        </br></br>
+
+        <input placeholder="Enter Amount" type="number" />
+
+        </br></br>
+
+        <label for="currency-select">Select a Currency</label>
+        <select id="currency-select">
+            <option disabled value="Select Currency">Select Currency</option>
+            <option v-for="currency in currencies.rates" :value="currency">{{ currency }}</option>
+        </select>
+
+
+
     </div>
     
 </body>
